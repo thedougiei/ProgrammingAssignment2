@@ -19,6 +19,11 @@
 
 
 ## Write a short comment describing this function
+## The first function, makeCacheMatrix creates a special 'matrix', which is really a list containing a function to
+##	set the value of the matrix
+##	get the value of the matrix
+##	set the value of the inverse
+##	get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -42,7 +47,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This function returns the inverse of a square matrix
 ## The inverse calculation is only executed if there is no previously cached value
 
-
+## a message 'getting cached data' is returned to indicated a cached value was used
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
